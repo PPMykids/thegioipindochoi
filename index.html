@@ -5,33 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TheGioiPinDoChoi</title>
   <meta name="description" content="Đồ chơi tư duy và pin cho thiết bị điện tử.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="./">TheGioiPinDoChoi</a>
-      <a class="contact-link" href="https://zalo.me/0964349029">NHẮN TIN ZALO</a>
+      <a class="brand" href="./">
+        <span class="brand-logo">MY</span>
+        <span class="brand-text">
+          <strong>TheGioiPinDoChoi</strong>
+          <small>SHOP · ĐỒ CHƠI & PIN ĐIỆN TỬ</small>
+        </span>
+      </a>
+      <nav class="header-actions">
+        <a class="contact-link" href="https://zalo.me/0964349029">Chat Zalo ↗</a>
+      </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <p class="eyebrow">CỬA HÀNG TRỰC TUYẾN</p>
-        <h1>TheGioiPinDoChoi</h1>
-        <p class="hero-subtitle">ĐỒ CHƠI TƯ DUY • PIN CHO THIẾT BỊ ĐIỆN TỬ</p>
-        <p>Khám phá sản phẩm phù hợp cho gia đình và thiết bị của bạn.</p>
-        <a class="button button-orange" href="#san-pham">XEM SẢN PHẨM</a>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">SHOP · ĐỒ CHƠI & PIN</p>
+          <h1>Khám phá thế giới đồ chơi và pin</h1>
+          <p class="hero-subtitle">
+            Đồ chơi tư duy sáng tạo và pin cho thiết bị điện tử,
+            lựa chọn tiện lợi cho gia đình bạn.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-blue" href="#san-pham">Khám phá sản phẩm →</a>
+            <a class="button button-outline" href="https://zalo.me/0964349029">Tư vấn qua Zalo</a>
+          </div>
+          <p class="hero-benefits">
+            ✓ Tư vấn rõ ràng　 ✓ Đặt hàng tiện lợi　 ✓ Hỗ trợ trước khi mua
+          </p>
+        </div>
+
+        <div class="hero-art" aria-label="Minh họa đồ chơi và pin">
+          <div class="art-circle"></div>
+          <div class="art-battery">
+            <span class="battery-label">Li-ion</span>
+            <small>POWER CELL</small>
+            <span class="battery-plus">+</span>
+          </div>
+          <div class="art-toy">
+            <div class="toy-blocks">
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+            </div>
+            <strong>LEARN & PLAY</strong>
+            <small>Đồ chơi sáng tạo</small>
+          </div>
+          <span class="art-badge">MY<br><small>SHOP</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefit-strip">
+      <div class="container benefit-grid">
+        <div class="benefit-item">
+          <span class="benefit-icon">◇</span>
+          <div><strong>Danh mục rõ ràng</strong><small>Dễ tìm sản phẩm</small></div>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">♡</span>
+          <div><strong>Tư vấn tận tình</strong><small>Hỗ trợ qua Zalo</small></div>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">↗</span>
+          <div><strong>Đặt hàng nhanh</strong><small>Liên hệ trực tiếp</small></div>
+        </div>
       </div>
     </section>
 
     <section class="container products-section" id="san-pham">
       <div class="section-heading">
-        <div>
-          <p class="eyebrow">DANH MỤC CỬA HÀNG</p>
-          <h2>Sản phẩm của chúng tôi</h2>
-        </div>
+        <p class="eyebrow">DANH MỤC NỔI BẬT</p>
+        <h2>Mua sắm theo nhu cầu</h2>
+        <p class="section-description">Lựa chọn sản phẩm phù hợp với bạn và gia đình.</p>
       </div>
 
       <div class="category-block">
@@ -52,11 +105,11 @@
         <div>
           <p class="eyebrow">CHÚNG TÔI LUÔN SẴN SÀNG HỖ TRỢ</p>
           <h2>Bạn cần tư vấn sản phẩm?</h2>
-          <p>Liên hệ cửa hàng hoặc gửi thông tin để chúng tôi gọi lại.</p>
+          <p>Liên hệ cửa hàng để được hỗ trợ trước khi mua.</p>
         </div>
         <div class="contact-actions">
-          <a class="button button-blue" href="https://zalo.me/0964349029">NHẮN TIN ZALO</a>
-          <a class="button button-outline" id="consultButton" href="#">ĐĂNG KÝ TƯ VẤN</a>
+          <a class="button button-blue" href="https://zalo.me/0964349029">Chat Zalo ↗</a>
+          <a class="button button-outline" id="consultButton" href="https://zalo.me/0964349029">ĐĂNG KÝ TƯ VẤN</a>
         </div>
       </div>
     </section>
@@ -69,6 +122,10 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <a class="floating-zalo" href="https://zalo.me/0964349029" aria-label="Chat Zalo">
+    <span>Z</span> Chat Zalo
+  </a>
+
+  <script src="./script.js"></script>
 </body>
 </html>
