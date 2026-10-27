@@ -1,0 +1,52 @@
+media:
+  input: assets/images
+  output: assets/images
+
+content:
+  - name: products
+    label: Sản phẩm
+    type: file
+    path: products.json
+    format: json
+    fields:
+      - name: products
+        label: Danh sách sản phẩm
+        type: object
+        list: true
+        fields:
+          - name: product_code
+            label: Mã sản phẩm
+            type: string
+            required: true
+          - name: name
+            label: Tên sản phẩm
+            type: string
+            required: true
+          - name: category
+            label: Danh mục
+            type: select
+            options:
+              values:
+                - label: Đồ chơi tư duy
+                  value: toys
+                - label: Pin cho thiết bị điện tử
+                  value: batteries
+          - name: price
+            label: Giá bán
+            type: number
+            required: true
+          - name: oldPrice
+            label: Giá cũ
+            type: number
+          - name: description
+            label: Mô tả sản phẩm
+            type: text
+          - name: image
+            label: Hình ảnh sản phẩm
+            type: image
+          - name: shopee_url
+            label: Link mua hàng Shopee
+            type: string
+          - name: tag
+            label: Nhãn sản phẩm
+            type: string
