@@ -910,3 +910,48 @@ a {
   }
 }
 
+/* Chinh khoang cach rieng cho noi dung san pham */
+.product-info {
+  gap: 3px;
+}
+
+.product-info h3,
+.product-name {
+  margin-bottom: 0;
+}
+
+.product-code {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.product-description {
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+/* Gia va nhan san pham gon hon */
+.product-prices {
+  padding-top: 4px;
+}
+
+.product-tag {
+  margin-top: 3px;
+}
+
+/* Dien thoai: tang nhe chieu rong the */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .product-info {
+    padding: 9px;
+  }
+
+  .product-card img {
+    height: 140px;
+  }
+}
+
