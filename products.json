@@ -8,6 +8,12 @@
       "oldPrice": 310000,
       "description": "Bộ xếp hình nam châm giúp trẻ phát triển tư duy và khả năng sáng tạo.\n",
       "image": "assets/images/TOY005-1.jpg",
+"images": [
+  "assets/images/TOY005-1.jpg",
+  "assets/images/TOY005-2.jpg",
+  "assets/images/TOY005-3.jpg",
+  "assets/images/TOY005-4.jpg"
+],
       "shopee_url": "https://vn.shp.ee/LUQ2niUJ",
       "tag": "SẢN PHẨM NỔI BẬT"
     }
