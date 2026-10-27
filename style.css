@@ -863,3 +863,50 @@ a {
   margin: 4px 0;
 }
 
+/* TINH CHINH KHOANG CACH NOI DUNG SAN PHAM */
+.product-info {
+  gap: 4px;
+  padding: 12px;
+}
+
+.product-name,
+.product-info h3 {
+  margin: 0 0 2px;
+  line-height: 1.4;
+}
+
+.product-code {
+  margin: 0 0 2px;
+}
+
+.product-description {
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+.product-prices {
+  padding-top: 6px;
+}
+
+.product-tag {
+  margin-top: 4px;
+}
+
+/* KHONG DE THANH TIEN ICH TRAN MAN HINH DIEN THOAI */
+@media (max-width: 600px) {
+  .benefit-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .benefit-item {
+    min-width: 0;
+  }
+
+  .benefit-grid,
+  .benefit-item {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
