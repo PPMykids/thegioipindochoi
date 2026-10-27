@@ -1012,4 +1012,64 @@ a {
     padding: 9px;
   }
 }
+  
+/* Trinh chieu nhieu anh san pham */
+.product-gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 220px;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #f3f8fd;
+  overflow: hidden;
+}
+
+.product-card .product-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin: 0;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffffed;
+  color: #10549a;
+  box-shadow: 0 2px 8px #0b2f5526;
+  font-size: 26px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.gallery-prev {
+  left: 8px;
+}
+
+.gallery-next {
+  right: 8px;
+}
+
+.gallery-arrow:hover {
+  background: #10549a;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .product-gallery {
+    height: 190px;
+  }
+}
+
 
