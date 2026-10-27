@@ -186,3 +186,48 @@
     gap: 16px;
   }
 }
+
+/* Logo thương hiệu */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #0b2f55;
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  color: #ffffff;
+  background: linear-gradient(145deg, #1687d6, #0b3970);
+  font-size: 24px;
+  font-weight: 900;
+  box-shadow: 0 8px 20px #10549a24;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.brand-text strong {
+  font-size: 23px;
+  letter-spacing: 0.3px;
+}
+
+.brand-text small {
+  color: #667c95;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
