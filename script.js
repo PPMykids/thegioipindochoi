@@ -102,3 +102,22 @@ async function loadProducts() {
     });
 
     if (status) {
+status.textContent = products.length
+        ? ""
+        : "Chưa có sản phẩm. Vui lòng quay lại sau.";
+    }
+  } catch (error) {
+    console.error("Lỗi tải sản phẩm:", error);
+    if (status) {
+      status.textContent =
+        "Chưa tải được sản phẩm. Vui lòng thử tải lại trang sau.";
+    }
+  }
+}
+
+const consultButton = document.getElementById("consultButton");
+if (consultButton) {
+  consultButton.href = "https://vn.shp.ee/LUQ2niUJ";
+}
+
+loadProducts();
