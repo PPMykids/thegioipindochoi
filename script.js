@@ -2,14 +2,58 @@ function makeProductCard(product) {
   const card = document.createElement("article");
   card.className = "product-card";
 
-  const image = document.createElement("img");
-  image.src = product.image || "";
-  image.alt = product.name || "Sản phẩm";
-  image.loading = "lazy";
-  image.onerror = function () {
-    image.style.display = "none";
+ 
+const imageList = Array.isArray(product.images) && product.images.length
+  ? product.images
+  : [product.image || ""];
+
+const gallery = document.createElement("div");
+gallery.className = "product-gallery";
+
+const image = document.createElement("img");
+image.src = imageList[0];
+image.alt = product.name || "Sản phẩm";
+image.loading = "lazy";
+image.onerror = function () {
+  image.style.display = "none";
+};
+gallery.appendChild(image);
+
+if (imageList.length > 1) {
+  let currentImage = 0;
+
+  const prev = document.createElement("button");
+  prev.type = "button";
+  prev.className = "gallery-arrow gallery-prev";
+  prev.textContent = "‹";
+  prev.setAttribute("aria-label", "Ảnh trước");
+
+  const next = document.createElement("button");
+  next.type = "button";
+  next.className = "gallery-arrow gallery-next";
+  next.textContent = "›";
+  next.setAttribute("aria-label", "Ảnh tiếp theo");
+
+  const updateImage = function () {
+    image.src = imageList[currentImage];
   };
-  card.appendChild(image);
+
+  prev.addEventListener("click", function () {
+    currentImage = (currentImage - 1 + imageList.length) % imageList.length;
+    updateImage();
+  });
+
+  next.addEventListener("click", function () {
+    currentImage = (currentImage + 1) % imageList.length;
+    updateImage();
+  });
+
+  gallery.appendChild(prev);
+  gallery.appendChild(next);
+}
+
+card.appendChild(gallery);
+
 
   const content = document.createElement("div");
   content.className = "product-info";
